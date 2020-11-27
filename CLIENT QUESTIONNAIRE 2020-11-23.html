@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html >
+	<head>
+
+		<title>CLIENT QUESTIONNAIRE</title>
+
+        <!-- SEO stuff -->
+                        
+        
+
+        <!-- canonical -->
+        
+
+        
+
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true&amp;language=en"></script>
+
+		<!-- mobile meta tags -->
+        <meta name="MobileOptimized" content="1024" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1, maximum-scale=1" />
+
+                    <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <!-- apple startup icons and screen -->
+                
+        
+
+        <!-- facebook thing - boh... -->
+        <script type="text/javascript">
+            if (window.location.hash && window.location.hash == '#_=_') {
+                window.location.hash = '';
+            }
+        </script>
+
+        <script type="text/javascript">
+            if (window.screen.height < 568) { // iPhone 4"
+                // alert('! iphone5');
+                //document.querySelector("meta[name=viewport]").content = "width=device-width, user-scalable=no, minimum-scale=1, maximum-scale=1";
+            }
+        </script>
+
+        <!-- add to homescreen stuff // IOS -->
+                <!-- add to homescreen stuff // ANDROID -->
+        <!-- css for this is in general template -->
+        
+
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+                                    <link rel="stylesheet" href="/core/css/jquerymobile.css" />
+                        <script type="text/javascript" src="/core/js/jquery.js"></script>
+            <script type="text/javascript" src="/core/js/jquerymobile.js"></script>
+            <script type="text/javascript" src="/core/js/jquery.fitvids.js"></script>
+        
+        <script type="text/javascript">
+            // remove ajax navigation
+            $(document).ready(function () {
+                $.mobile.ajaxEnabled = false;
+                $("input[type=image]").attr( "data-role", "none" );
+            });
+            $(document).bind("mobileinit", function () {
+                $.mobile.ajaxEnabled = false;
+                $("input[type=image]").attr( "data-role", "none" );
+            });
+        </script>
+
+        <!-- $_GET['nominifycss'] is used to understand if it's a download -->
+                                    <script type="text/javascript">
+                    $.mobile.loadingMessage = "loading...";
+                    $(document).bind('pageshow', function() {
+                        $.get('/core/ajax/stats.php?s_id=40529&amp;p_id=211733');
+
+                        // remove default AJAX behavior for links in contentBlock
+                        $(".mainContentBlock a").attr("rel","external").click(function () { $.mobile.showPageLoadingMsg(); });
+                        $(".footer a").attr("rel","external").click(function () { $.mobile.showPageLoadingMsg(); });
+                        
+                        // fitvids.js
+                                            });
+                </script>
+                    
+
+        <!-- $_GET['nominifycss'] is used to understand if it's a download -->
+        
+
+        <script type="text/javascript">
+            $(document).bind('pageloadfailed', function(e, data) {
+                $.mobile.loading('show');
+            });
+            $(document).bind('pagechange', function(e, data) {
+                $('.ui-loading .ui-loader').hide();
+            });
+
+                    </script>
+
+
+        
+        
+
+        <!-- new editor for power reseller -->
+        
+
+
+
+        
+
+                    <!-- FOR SCROLLING IN PREVIEW -->
+            <script src="/js/jquery.nicescroll.min.js"></script>
+            <script src="/js/jquery.easing.1.3.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    // add 'demo' to all links
+                    $('a').each(function(i, v) {
+                        if ($(this).attr('href').indexOf('?') > -1)
+                        {
+                            $(this).attr('href', $(this).attr('href') + '&demo=1');
+                        }
+                        else
+                        {
+                            $(this).attr('href', $(this).attr('href') + '?demo=1');
+                        }
+                    });
+
+                    if (top === self)
+                    {
+                    }
+                    else
+                    {
+                                                    $("html").niceScroll({
+                                touchbehavior: false,
+                                cursorwidth: '7px',
+                                bouncescroll: true,
+                                cursoropacitymax: '0.7'
+                            });
+                                            }
+                });
+            </script>
+
+            <style type="text/css">
+                body {
+                    user-select: none;
+                    -o-user-select: none;
+                    -moz-user-select: none;
+                    -khtml-user-select: none;
+                    -webkit-user-select: none;
+                }
+                .demo td.label {
+                    font-size: 11px;
+                    width: 65px;
+                }
+                .demo input:not(.td), .demo textarea:not(.td) {
+                    width: 90%;
+                    margin: 0.2em auto;
+                    font-size: 11px;
+
+                }
+                .demo select:not(.td) {
+                    width: 105px;
+                    font-size: 11px;
+                    padding: 1px;
+                }
+                /*
+                #wholepage {
+                    cursor: move;
+                    cursor: url(/images/grab.png), move;
+                    cursor: grab;
+                    cursor: -moz-grab;
+                }
+                */
+            </style>
+        
+
+
+        <style type="text/css">
+         #mobisit-viewport-id { font-family:Arial, Helvetica, sans-serif;  background:white;  font-size:11px; }  strong { font-weight:bold; }  .mobisit-loading-container { height:100%; position:relative; } .mobisit-loading { position:absolute; top:50%; left:50%; width:716px; height:100px; background:#5a5a5a url('/core/sencha/resources/themes/images/default/loading.gif') no-repeat 50% 50%; color:#eee; text-align:center; margin-left:-358px; margin-top:-50px; -webkit-border-radius:10px; border-radius:10px; } .mobisit-loadingpopup-cls .x-panel-body { background:#5a5a5a url('/core/sencha/resources/themes/images/default/loading.gif') no-repeat 50% 50%; }  .mobisit-navigation-cls { padding:0.2em; font-size:0.7em; }           </style>
+
+        <style type="text/css">
+          body {   font-family:helvetica, sans-serif;   } body.x-desktop {   } #mobisit-viewport-id {   }  a { color:#131111; text-decoration:none; } a.button, a.mii-btn {  padding:0.6em 0.9em 0.6em 0.9em;  margin:0.5em;  color:#DDDDDD;  font-size:0.8em;  background-color:#504A3C; } a.button.wide, a.mii-btn.wide {  padding:0.6em 2em 0.6em 2em;  font-weight:bold; } a.button.header, a.mii-btn.header {   -moz-border-radius:0.5em;   -webkit-border-radius:0.5em;   border-radius:0.5em;   padding:0.6em 0em;   margin:0em;   width:3.5em;   border:1px solid #161410;  top:0.55em;   line-height:1em;   -moz-box-shadow:0 1px 0 rgba(255,255,255,.3);   -webkit-box-shadow:0 1px 0 rgba(255,255,255,.3);   box-shadow:0 1px 0 rgba(255,255,255,.3);   background-image:-webkit-gradient(linear,left top,left bottom,from(#504A3C),to(#575041));   background-image:-webkit-linear-gradient(#504A3C,#575041);   background-image:-moz-linear-gradient(#504A3C,#575041);   background-image:-ms-linear-gradient(#504A3C,#575041);   background-image:-o-linear-gradient(#504A3C,#575041);   background-image:linear-gradient(#504A3C,#575041); font-size:0.95em;   } a.button.header.back, a.mii-btn.header.back {   left:0.8em;   padding:0.4em 0em; } a.button.header.home, a.mii-btn.header.home {   right:0.8em;   padding:0.4em 0em; } a.button.header.home .homeheaderbutton, a.button.header.home .dropdownbutton, a.button.header.back .headerbackdiv, a.mii-btn.header.home .homeheaderbutton, a.mii-btn.header.home .dropdownbutton, a.mii-btn.header.back .headerbackdiv {   height:1.4em;   width:1.4em;   margin:0em auto; } a.button.header.half, a.mii-btn.header.half {   padding:0.6em 0em;   width:2.5em;   position:absolute; } a.button.header.half.left, a.mii-btn.header.half.left {   -moz-border-radius:0.5em 0em 0em 0.5em;   -webkit-border-radius:0.5em 0em 0em 0.5em;   border-radius:0.5em 0em 0em 0.5em;   right:3.3em; } a.button.header.half.right, a.mii-btn.header.half.right {   -moz-border-radius:0em 0.5em 0.5em 0em;   -webkit-border-radius:0em 0.5em 0.5em 0em;   border-radius:0em 0.5em 0.5em 0em;   right:0.8em; } table {   margin:auto; } #mobisit-viewport-id {   background:#dbdbdb; font-family:helvetica, sans-serif; }  .aboveimage img {   width:100%; } .mobisit-navigation-cls { float:none; clear:both; } .mobisit-navigation-cls a {  margin:1em 0.5em 0em 0.5em;  padding:0.5em 0.8em 0.5em 0.8em;  color:#504A3C;  font-size:0.9em;  background:#746b57;  border:1px solid #bdb6a7; }   .x-toolbar.x-docked-top {   border-bottom:1px solid #9e9393; } .mobisit-titlebar-cls, .x-toolbar-dark {  background:#161513;  background:-webkit-gradient(linear,left top,left bottom,color-stop(0.0,#44413b),color-stop(1.0,#161513)); background:-moz-linear-gradient(#44413b, #161513);;  background:-moz-linear-gradient(#44413b, #161513) repeat scroll 0% 0% rgb(51, 51, 51);   border-bottom:1px solid #9e9393;  padding:0.5em 0em 0.8em 0em; height:22px; line-height:2.1em;   color:#ffffff; } .x-toolbar-dark .x-toolbar-title {   color:#ffffff; }   .toolbar-buttons, .ui-btn-up-a, .ui-btn-hover-a, .ui-btn-down-a, .toolbar-buttons, .ui-btn-up-a, .ui-btn-hover-a, a.ui-btn-up-a:visited, .ui-btn-up-a .ui-btn-text {  padding-top:0.5em;  padding-bottom:0.5em;  color:#504A3C;  border:0.1em solid black; } .paypalbutton .ui-btn-text {   border:none; } .headertitle {   width:10em; display:block;  margin-left:auto;   margin-right:auto;   text-overflow:ellipsis;   padding:0em;   text-align:center;   white-space:nowrap;   overflow:hidden; } .homeheaderbutton {   width:1.5em;   height:1.5em; -webkit-mask-box-image:url('/core/images/pictos/home2.png');  mask:url('/core/images/pictos/home2.svg');  background-color:#DDDDDD; } .headerbackdiv {   width:1.5em;   height:1.5em; -webkit-mask-box-image:url('/core/images/pictos/arrow_left.png');  mask:url('/core/images/pictos/arrow_left.svg');  background-color:#DDDDDD; } .dropdownbutton {   width:1.5em;   height:1.5em; -webkit-mask-box-image:url('/core/images/pictos/list2.png');  background-color:#DDDDDD; } .backxeal { -webkit-mask-box-image:url('/core/images/pictos/arrow_left.png');  mask:url('/core/images/pictos/arrow_left.svg');  background-color:#161410; } .homeheaderbuttonxeal { -webkit-mask-box-image:url('/core/images/pictos/home2.png');  mask:url('/core/images/pictos/home2.svg');  background-color:#161410;   height:50%;   width:50%;   margin-top:20%; } .dropdownbuttonxeal { -webkit-mask-box-image:url('/core/images/pictos/list2.png');  mask:url('/core/images/pictos/list2.svg');  background-color:#161410;   height:50%;   width:50%;   margin-top:18%; }   .dropdownmenu_container {   display:none;   position:absolute;   width:85%;   top:3em;   right:0.7em;   z-index:9999999;   background-color:#504A3C;   border:0.1em solid black;   box-shadow:1px 1px 5px #555; } .dropdownmenu_container .dropdownmenu_box {   margin:0em; } .dropdownmenu_container .dropdownmenu_box .x-list-item {   padding:0.8em;   border-bottom:1px solid;   position:relative; } .dropdownmenu_container .dropdownmenu_box a, .dropdownmenu_container .dropdownmenu_box a div { color:#DDDDDD;   }   .dropdownmenu_container .dropdownmenu_box .x-list-item .arrow {  position:absolute;  right:1em;  bottom:0.5em;  background:transparent url('/core/css/icons/chevron_dark_small.png') no-repeat;  height:22px;  width:22px;   }   #p-211733-id, #mobisit-viewport-id.home {   } .mobisit-menulist-cls, .mobisit-pagebuttons-cls { float:none; clear:both;   margin:0em 0.6em; background:transparent; } .mobisit-pagebuttons-cls {   margin:0.5em; } .mobisit-menulist-cls {  }  .mobisit-menulist-cls a .x-list-item.mobisit-menulist-cls-item-selected {  background:#333333;  color:#333333; } .mobisit-menulist-cls .x-list-item, .mobisit-menubutton {  font-size:114%;  position:relative;  color:#333333;  padding:0.5em; padding-right:2em; padding-left:0.7em;;  background:#CEC9BD;  margin:0em;  font-weight:bold;  border:0px; border-top:1px solid #181002; border-right:1px solid #181002; border-left:1px solid #181002; border-bottom:0px;;  text-align:left;  -webkit-border-radius:0;  border-radius:0;  opacity:1; } .mobisit-menulist-cls a .x-list-item, .mobisit-menulist-cls .x-list-item a {  color:#333333; } .mobisit-menulist-cls a .x-list-item:hover {  } .mobisit-menulist-cls .first-child { -webkit-border-radius:0.8em 0.8em 0 0; border-radius:0.8em 0.8em 0 0; padding-top:0.6em;  }  .mobisit-menulist-cls .last-child { -webkit-border-radius:0 0 0.8em 0.8em; border-radius:0 0 0.8em 0.8em; border-bottom:1px solid #181002; padding-bottom:0.6em;  }  .mobisit-menulist-cls .x-list-item .menusubtitle {  color:#433c3c;  font-size:0.85em;   } .mobisit-menulist-cls .x-list-item .arrow, .mobisit-menubutton .arrow {  position:absolute;  right:1em;  bottom:0.5em;  background:transparent url('/core/css/icons/chevron_dark_small.png') no-repeat;  height:22px;  width:22px;   }  .mobisit-menulist-cls .icon {   display:none; }  .mobisit-list-cls { clear:both; float:none; margin:0px; padding:0px; } .x-list {   background-color:transparent; }  .mobisit-list-cls .x-list-item, .mobisit-searchresults-cls .x-list-item { border: 0; padding: 0;   margin:0;   color:#161410; } .mobisit-list-cls .mobisit-list-item, .mobisit-searchresults-cls .mobisit-list-item { color:#333333;  position:relative;  border: 0px; border-bottom:1px solid #a21010;  padding: 0;  margin:0;  background:#CEC9BD;  min-height:6em;   border:0; border-bottom:0px; border-bottom:1px solid #a21010; }  .mobisit-list-cls .x-list-item.mobisit-list-cls-item-selected .mobisit-list-item, .mobisit-searchresults-cls .x-list-item.mobisit-searchresults-cls-item-selected .mobisit-list-item, .mobisit-list-cls a .mobisit-list-item.mobisit-list-cls-item-selected, .mobisit-searchresults-cls .mobisit-list-item.mobisit-searchresults-cls-item-selected, .mobisit-list-cls a .mobisit-list-item:hover, .mobisit-searchresults-cls a .mobisit-list-item:hover { }  .mobisit-list-cls .mobisit-list-item .image { min-height:5em; height:5em; width:5em; float:left; margin:0.4em; background-position:50% 50%; background-size:auto 5em; -webkit-background-size:auto 5em; background-repeat:no-repeat; } .mobisit-list-cls .mobisit-list-item .text {   margin:0; margin-left:0.4em;;   padding:0; padding-top:0.6em; padding-bottom:0.4em; padding-right:3em;; } .mobisit-list-cls .mobisit-list-item .text .date, .mobisit-list-cls .mobisit-list-item .text .address, .mobisit-list-cls .mobisit-list-item .text .distance { font-size:0.7em; color:#2b2b2b; } .mobisit-list-cls .mobisit-list-item .text .author { display:none; } .mobisit-list-cls .mobisit-list-item .text .distance { color:#2b2b2b; font-weight:bold; } .mobisit-list-cls .mobisit-list-item .text .title { font-size:0.93em; font-weight:bold; } .mobisit-list-cls .mobisit-list-item .text .body { font-size:0.7em; }  .mobisit-geolist-form-cls, .mobisit-geolist-searchlat-cls, .mobisit-geolist-geoerror-cls { text-align:center; font-size:1em; margin:0.2em; padding-top:0.3em; } .mobisit-geolist-form-cls input[type=text] { font-size:0.9em;   } .mobisit-geolist-geoerror-cls { color:red; }   .mobisit-list-cls .x-list-item .arrow, .mobisit-list-item .arrow {  position:absolute;  right:0.5em;  bottom:2em;  background:transparent url('/core/css/icons/chevron_dark.png') no-repeat;  height:25px;  width:25px;   } .mobisit-contentblock-cls, .addon_comments {   color:#161410;   -webkit-border-radius:0.8em;   border-radius:0.8em;   padding:1.1em;   margin:0.5em;   background:#dbd7d7; border:1px solid #a21010;   font-family:helvetica, sans-serif;   font-size:1em; float:none; clear:both;   text-shadow:none; } .mobisit-contentblock-cls .content .date, .mobisit-contentblock-cls .content .author { font-size:0.8em; color:#93866b; margin-bottom:0.2em; } .mobisit-contentblock-cls h1, .mobisit-contentblock-cls .content .title {   font-size:1.1em; font-weight:bold;; margin:0em 0em 0.2em 0em; padding:0em;   background:none; } .mobisit-contentblock-cls .content .link { text-align:center; } .mobisit-contentblock-cls .content .link input { padding:0.3em; -webkit-border-radius:0.2em; border-radius:0.2em; border:1px inset #a21010;   background-color:#504A3C;   color:#DDDDDD; width:70%; font-size:1.1em; margin:0.5em auto 0.5em auto; } .mobisit-contentblock-cls h2 { font-size:1.1em;  margin:0em 0em 0.2em 0em; } .mobisit-contentblock-cls .image {  text-align:center; border:0px;  background-size:auto 100%; } .mobisit-contentblock-cls .imageBackground {   height:8em;   background-size:auto 100%;   margin-bottom:1em; } .mobisit-contentblock-cls img { max-width:100%;  float:none;   clear:both;   border:0px; } .mobisit-contentblock-cls .image img {   max-height:100%; }  .mobisit-contentblock-cls p {   font-family:helvetica, sans-serif;   font-size:1em; margin:0em 0em 0.2em 0em; padding:0em; }  .mobisit-contentblock-cls .link {  text-align:center;  margin:1em; }  .mobisit-contentblock-cls .heading { padding:0.3em; } .mobisit-contentblock-cls .heading image { margin:0.2em; text-align:center; } .mobisit-contentblock-cls .heading img { height:6.5em; margin:0em; } .mobisit-contentblock-cls .heading h1 {   font-size:1.1em; font-weight:bold;; background:none;   margin:0.1em;   padding:0.1em;   text-align:center;   } .mobisit-contentblock-cls .heading h2 { font-weight:normal; font-size:0.80em;  margin:0em 0em 0.2em 0em; padding:0px; }  .mobisit-contentblock-cls .shoppingCart table {   margin-top:1em;   margin-bottom:1em; } .mobisit-contentblock-cls .shoppingCart table td {   border-bottom:1px solid #93866b; } .mobisit-contentblock-cls .shoppingCart table tr.total td {   font-weight:bold;   border-bottom:0px; } #shoppingcart_button_div {   margin-top:1.5em;   text-align:center; } #shoppingcart_button_div a {   padding:0.5em 1.5em; } .addtocart .ui-btn-inner {   padding-left:9px;   padding-right:9px; } #shareandmail, #askifpickup {   z-index:9999;   display:none;   position:absolute;   top:3em;   left:50%;   margin:1em -45%;   padding:1em;   background-color:white;   color:black;   box-shadow:1px 1px 5px #111;   border-radius:3px;   text-align:center;  width:80%; } #shareandmail + .mobisit-contentblock-cls {   } #sendcarttotable .sendcarttotable {   margin-top:-1.5em; } #shareandmail .field, #askifpickup .field {   margin:1em 1.5em;   text-align:center; } #shareandmail .field input, #shareandmail .field textarea, #askifpickup .field input, #askifpickup .field textarea, #askifpickup .field select {   display:block;   float:none;   clear:both;   margin:0.3em auto;   width:90%;   background-color:white;   color:black;   font-size:1.1em;   padding:0.2em; } #shareandemail_form {   margin-top:-2em; } .mobisit-social-container {  padding:0.5em 0em;  margin:0em;  background:transparent;  float:none; clear:both; text-align:center; } .mobisit-social-opener { display:none; } .mobisit-social-icon-container { display:block; text-align:center;   } .mobisit-social-icon-container img {  float:left;  clear:none;  margin:0.3em; }  .calendar-month td, .calendar-month th { border-left:1px solid #161410; border-bottom:1px solid #161410;   color:#161410; padding:0px 0; text-align:center;  font-size:1.1em;  width:300px;  height:2em; } .calendar-month table {  border-right:1px solid #a21010;  border-top:1px solid #a21010; } .calendar-month th { background:#93866b;  color:#CEC9BD;   font-weight:bold; font-size:1em; } .calendar-month th a {  color:#CEC9BD;   } .calendar-date { background:#dbd7d7; } .calendar-other { background:#beb6a6; font-weight:normal !important; } .calendar-month td.calendar-today { background:#161410;   color:#d4cec3; } .calendar-month td.calendar-event {   background:#504A3C;   color:#DDDDDD; font-weight:bold; } .calendar-select { background:#dbd7d7; color:#161410; } .mobisit-map-cls { margin:0.5em; background-color:white;   border:1px solid #a21010; float:none; clear:both; } .showAddress {   text-align:center;   font-size:0.9em;   margin:0.2em; } .mappopup {   position:absolute;   padding:5%;   border:1px solid #a21010;   top:10px;   margin:auto;   margin-left:-40%;   width:70%;   left:50%;  background:#ffffff;   box-shadow:1px 1px 2px #999;   display:none;   border-radius:2px; } .mappopup a {   display:block;   padding:0.1em 0em; } .mobisit-gallery-cls { clear:both; float:none; } .mobisit-gallery-cls .picture { float:left; } .mobisit-gallery-cls .picture .innerBorder { border:1px solid #a21010; width:100%; } .mobisit-gallery-cls .picture .innerBorder.backgroundcolor {   background:#dbd7d7; } .mobisit-gallery-cls .x-list-item { float:left; border:0px; padding:0px; margin:0px; background-color:white; }  .captionHtml {  margin:0.8em;  padding:0.5em;  width:80%;  font-size:1.1em;  text-align:center; }  #mobisitgallery-swapPanel-id .mobisit-contentblock-cls, #mobisitgallery-swapPanel-id .mobisit-contentblock-cls .mainContentBlock { margin:0px; padding:0px; } #mobisitgallery-swapPanel-id .mobisit-contentblock-cls img { width:100%; position:relative; } #mobisitgallery-swapPanel-id .mobisit-contentblock-cls .caption { width:100%; position:absolute; top:0px; left:0px; padding:10px; background-color:black; opacity:0.6; color:white; }   .mobisit-autocarousel-cls {  margin:0.5em;  color:#161410;  background:#dbd7d7;  border:1px solid #a21010;  font-family:helvetica, sans-serif;  font-size:1em;  float:none;  clear:both;  padding:0.5em;   border:1px solid #a21010; }  .mobisit-autocarousel-title { font-size:1.1em; font-weight:bold; background-color:black; color:white; padding:5px; } .x-carousel-indicator span { box-shadow:0px 0px 3px #eee; } .mobisit-autocarousel-cls .item { height:100%; background-position:50% 0%; -webkit-background-size:auto 100%; background-size:auto 100%; background-repeat:no-repeat; background-color:#fff; position:relative; } .mobisit-autocarousel-cls .caption { position:absolute; top:0px; left:0px; width:100%; padding:0.7em; } .mobisit-autocarousel-cls .caption p {  font-size:1em; }  .form {  margin:0.5em;  padding:0.5em;   background-color:#dbd7d7;  border:1px solid #a21010;  float:none;  clear:both; } .contactItem .form {  margin:0em;  padding:0em;  box-shadow:none;  background-color:transparent;  border:0; } .x-form .x-panel-body { padding:0px; margin:0px; background:transparent; } .mobisit-contentblock-cls .x-panel-body { padding:0px; background:transparent; } .x-form-fieldset { margin:0.5em; padding:0px; float:none; clear:both; } .x-form-label, .form .label { text-shadow:white 0 1px 1px; color:#161410; text-shadow:rgba(255, 255, 255, 0.25) 0 0.08em 0; background-color:transparent; padding:0.6em; border-top:1px solid transparent; display:block; } .x-form-label span, .form .label { font-size:0.8em; font-weight:bold; } .form div.label {   text-align:center;   margin:1em auto 0em auto;   padding-bottom:0.1em; } .form .field {  } .form input, .form textarea, .form select, input, textarea, select {   border:1px solid #a0a0a0 !important;   -moz-border-radius:.2em !important;   -webkit-border-radius:.2em !important;   border-radius:.2em !important;   background-color:white !important;   color:#111 !important; } .form div.field input, .form div.field textarea, .form div.field select {   margin:0.2em auto;   width:85%;   display:block; } input[type=file] {   padding:0.5em;   width:75% !important; } .form div.field .ui-checkbox {   height:1em;   margin-bottom:1.5em;   display:block;   text-align:center;   margin-left:auto; } .form select {   padding:0.1em;   width:100%; } .mobisit-form-cls-goback {   background-color:#C4EF99;   margin:10px;   border:1px solid #69B220;   color:black; } .mobisit-form-cls-goback td {   padding:5px; } #dateselectdateid, input[type="date"] {   min-height:1.2em; } .mobisit-form-cls-error {   margin:1.5em;   padding:1em;   border:1px solid black;   background-color:#E71212 !important;   color:#f3f3f3 !important;   text-align:center; }  tr.poll_question td { } tr.poll_question td.label, tr.poll_question td.field {   padding:0.4em;   font-size:1.2em;   border:none; } tr.poll_question td .poll_radio {   width:20px;   height:20px;   border-radius:15px;   border:1px solid #a21010; } tr.poll_question td .poll_radio.checked {   background-color:#504A3C; } .pollresult_item { margin:0.5em; padding:0.6em;   border:1px solid #a21010; } .pollresult_item p { font-size:1em; font-weight:bold; margin:0.3em 0.1em; } .pollresult_item .pollresult_item_perc { color:#2b2b2b; font-size:0.9em; float:left;   text-align:right;   width:3em; } .pollresult_item .pollresult_bar { height:1em;   margin:0.3em 0em 0.3em 3em; box-shadow:1px 1px 2px #8d8d8d; background:#161410; } .pollresult_totalvotes { text-align:center; font-size:0.8em; color:#2b2b2b; padding:0.5em; } .mobisit-contact-cls {   color:#161410;   margin:0.5em; background:#dbd7d7;   border:1px solid #a21010; float:none; clear:both; }  .mobisit-contact-cls .contactItem { padding:0.6em; border-bottom:1px solid #a21010; margin:0.4em;  min-height:3em; } .contactItem a { color:#161410; } .mobisit-contact-cls .contactItem.last { border:0; } .mobisit-contact-cls .contactItem h1 { font-weight:bold; font-size:1em;  margin:0.5em; } .mobisit-contact-cls a .contactItem h1 , .mobisit-contact-cls a .contactItem h2 { text-decoration:none; } .mobisit-contact-cls .contactItem img { float:right; margin:0.4em 0.4em 0em 1em; height:2.5em; border:0; } .mobisit-contact-cls .contactItem h2 {  font-size:0.9em;   margin:0.5em;  font-weight:normal; }   .clicktocallbutton {   margin:0.5em;   padding:0.5em;   font-size:1.1em;   text-align:center; color:#DDDDDD;  background-color:#504A3C;   font-weight:bold;   -moz-border-radius:0.8em;   border-radius:0.8em;   -webkit-border-radius:0.8em;   box-shadow:1px 1px 2px #8d8d8d;   } .clicktocallbutton img {   width:100%;   margin-bottom:0.5em !important; } .footer { text-align:center; font-size:0.8em; margin:0.6em;   padding-bottom:0.5em; }   .paypalbutton {   text-align:center;   margin-top:1em;   } .paypalbutton select, .paypalbutton input {   margin:0.4em 0em 0.4em 0em; }  .coupon_expiration {   text-align:center;   margin-top:0.5em;   color:#93866b;   font-size:0.9em; } .coupon_expiration .date {   font-weight:bold; } .coupon_expired {   text-align:center;   font-size:1.2em; } .coupon_expired .date {   display:block;   font-weight:bold;   font-size:1.5em; }   .addon_comments {  margin:0.2em;   padding:0.2em; } .addon_comments h2 {   font-size:1.2em;   margin-bottom:1em;   background:#beb6a6;   padding:0.3em; } .addon_comments .addon_comment {   margin-bottom:1.2em;   padding-bottom:1.2em;   border-bottom:1px solid #beb6a6;   float:none;   clear:both; } .addon_comments .addon_comment .image {   float:left;   margin:0.6em 0.6em 0em 0em; } .addon_comments .addon_comment .image img {   height:2.5em;   width:2.5em; } .addon_comments .addon_comment .author {   font-size:1.1em;   padding-top:1em; } .addon_comments .addon_comment .title {   font-weight:bold;   margin-bottom:0.2em; } .addon_comments .addon_comment .body {   float:none;   clear:both; } .addon_comments .addon_comment .date {   font-style:italic;   margin-bottom:0.2em;   font-size:0.9em; } .addon_comments .new_comment {   margin-top:1.5em; } .addon_comments .new_comment h2 {   font-size:0.8em; } .addon_comments .new_comment label {   display:block;   padding:0.2em;   font-size:0.8em; } .addon_comments .new_comment input, .addon_comments .new_comment textarea {   float:none;   display:block;   width:90%;   font-size:1em;   padding:0.5em;   margin:0.1em auto;   margin-bottom:0.5em;   -webkit-border-radius:0.8em;   border-radius:0.8em;   border:1px solid #beb6a6; } .addon_comments .new_comment textarea {   height:5em; }  .ui-content {   padding:0px;   margin:0px;   overflow:hidden; } .ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button, .ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button, .ui-btn-up-a, .ui-btn-hover-a, .ui-btn-down-a {   font-family:helvetica, sans-serif; } .ui-body-c, .ui-dialog.ui-overlay-c {   text-shadow:none;   border:none;   background:none;   background-image:none;   color:#161410; } .ui-bar-a {   color:#ffffff;   font-size:1.1em; } .ui-header, .ui-footer, .ui-page-fullscreen .ui-header, .ui-page-fullscreen .ui-footer {   width:100%; } .ui-footer.ui-bar-a {   background:transparent;   border:none;   text-shadow:none; } .ui-header .ui-btn-inner, .ui-footer .ui-btn-inner, .ui-bar .ui-btn-inner {   font-size:8px;   padding:0em;   line-height:1.1em; } .ui-header .ui-btn, .ui-footer .ui-btn, .ui-bar .ui-btn { } .ui-header .ui-btn-left {   top:0.5em; } .ui-btn-corner-all {   -moz-border-radius:0.5em;   -webkit-border-radius:0.5em;   border-radius:0.5em; } .ui-btn-inner {   border-top:0px; } .button-back {   padding-left:1em;   padding-right:1em; } .ui-btn-text {   border:none; } .ui-header .ui-btn-left.halfbutton, .ui-header .ui-btn-right.halfbutton, .ui-header .ui-btn.halfbutton {   position:absolute;   top:6px;   width:8px;   padding-left:8px;   padding-right:8px;  text-decoration:none; } .ui-header .ui-btn-right.halfbutton.left, .ui-header .ui-btn-left.halfbutton.left, .ui-header .ui-btn.halfbutton.left {   -moz-border-radius:0.5em 0em 0em 0.5em;   -webkit-border-radius:0.5em 0em 0em 0.5em;   border-radius:0.5em 0em 0em 0.5em;   left:auto;   right:31px; } .ui-header .ui-btn-left.halfbutton.right, .ui-header .ui-btn-right.halfbutton.right, .ui-header .ui-btn.halfbutton.right {   -moz-border-radius:0em 0.5em 0.5em 0em;   -webkit-border-radius:0em 0.5em 0.5em 0em;   border-radius:0em 0.5em 0.5em 0em;   left:auto;   right:9px; } .ui-loader {   width:150px;   margin-left:-105px;   z-index:999999999 !important; } .ui-icon-loading {   background-image:url('/images/compass_32x32_white.png'); } .ui-body-c .ui-link, .ui-body-c .ui-link:visited, .ui-body-c .ui-link:active {   color:#131111; } .ui-body-c span .ui-link, .ui-body-c span .ui-link:visited, .ui-body-c span .ui-link:active {   color:inherit; } .ui-body-c .button.ui-link, .ui-body-c .button.ui-link:visited, .ui-body-c .button.ui-link:active {   color:#DDDDDD; } .contactLink, .mobisit-contact-cls .ui-link, .mobisit-contact-cls .ui-link:hover, .mobisit-contact-cls .ui-link:visited {   color:#131111; }   .ui-btn-hidden {   width:100%!important; }   .sendcarttotable td {   background-color:white;   color:black; }   .iosSlider {   width:100%;  height:100%; } .iosSlider .slider {   width:100%;   height:100%; } .iosSlider .slider .slide {   position:relative;   top:0;   left:0;   width:100%;   margin:0 0 0 0; } .iosSlider .slider .slide .slidecaption, .iosSliderGallery .slider .slide .slidecaption {   position:absolute;   bottom:0;   left:0;   width:100%;   padding:0em;   text-align:left;   background:transparent url(/core/js/iosslider/bg.png);   } .iosSlider .slider .slide .slidecaption .slidecaptiontext, .iosSliderGallery .slider .slide .slidecaption .slidecaptiontext {   color:white;   padding:1em; }  #next_iossliderGallery {  float:right; } #prev_iossliderGallery {  float:left; }  .loyaltyContent input[type=password] {   background-color:white;   color:black;   border:1px solid black; }   .addToHomeAndroid {   position:relative;   top:35%;   width:80%;   margin:auto;   border:1px solid black;   border-radius:5px;   background-color:#fefefe;   text-align:center;   color:black;   box-shadow:1px 1px 5px #888; } .addToHomeAndroid .inner {   padding:1em; } .addToHomeAndroid .inner strong {   display:block;   margin-top:0.2em; } .addToHomeAndroidClose {   position:absolute;   right:-12px;   top:-12px;   height:30px;   width:30px;   background:transparent url(http://mob.is.it/images/x_alt_16x16_whiteshadow.png) no-repeat 50% 50%; }   .searchbar {   margin:0px;   padding:1.1em;   margin:0;  background:#dbd7d7;   border:1px solid #a21010;   font-size:1em;   float:none;   clear:both;   text-shadow:none; } .searchbar input[type=text] {   width:67%;   border-radius:2px;   background-color:white;   color:#555;   border:1px solid #131111;   box-shadow:none; } .searchbar input[type=text].small {   width:39%; } .searchbar input[type=text].small_large {   width:67%; } .searchbar a {   padding:0.8em 0.6em;   margin:0px 0px 0px 4px;   display:block;   width:20%;   float:right;   text-align:center; } .searchbar a.button.large {   float:none;   padding:10px 4%;   width:92%;   margin:-1em 0em 0.5em 0em; } .mobisit-pagination-cls {   text-align:center; } .mobisit-pagination-cls table td a {   display:block;   border:1px solid #131111;   padding:0.5em 0.7em; } .mobisit-pagination-cls table td a.pagination_active {   background-color:#131111;   color:#dbd7d7; }   .announcement_container {   position:fixed;   display:none;   width:100%;   z-index:9999999; } .announcement_container img {   height:2em;   margin:1em;   position:absolute;   left:0em; } .announcement_container img.right {   right:0em !important;   left:auto !important; } .announcement_container .announcement_inner {   margin:0.5em;   position:relative;   height:2em; } .announcement_container .announcement_inner.right { } .announcement_container .announcement_inner ul {   list-style:none; } .announcement_container .announcement_inner ul li {   position:absolute;   width:100%; } .announcement_container .announcement_inner ul li span {   padding-left:3.5em; } .announcement_container .announcement_inner.right ul li span {   padding-right:3.5em; }  .mobisit-autocarousel-cls {  border:1px solid >link_color;  margin-top:0px;  padding-top:0px;  padding-bottom:0px; } .bx-wrapper .bx-viewport {  box-shadow:none!important;  border-top:0px!important; border:none !important; left:auto !important; } .bx-wrapper .bx-viewport ul {   margin:0px;   padding:0px; } .bx-wrapper .bx-viewport li {   } ul.bxslider {   padding-left:0px !important; }  body.home .button.header.back {  display:none!important; }  .error-404-container {   text-align:center;   background:#dddddd;   color:#aaaaaa;   padding:1em; } .error-404-img {   width:170px;   height:110px;   margin:auto;   margin-top:30px;   display:block;   opacity:.6;   background-size:contain;   background-repeat:no-repeat; } .error-404-title {   font-size:1.8em;   margin-bottom:10px; }  #overlayLoaderConnection {   position:absolute;   width:100%;   height:100%;   background:#ddd;   text-align:center;   display:block;   color:#555;   padding-top:50%;   z-index:999999; } #overlayLoaderConnection p {   font-size:1.5em; }  form[action*="paypal"] input.ui-btn-hidden {   width:auto !important;   height:auto !important;   position:relative;   opacity:1;   background:transparent;   border:none !important;   -webkit-appearance:initial; }            
+
+        </style>
+
+
+        
+        <!-- RTL for hebrew -->
+        
+
+        <!-- custom per-site head -->
+        
+        
+	</head>
+
+
+	<body class="html default demo home " id="mobisit-viewport-id" style="border: 0px; margin: 0px; padding: 0px; " onload="if (typeof parent.unMaskIframe == 'function') { parent.unMaskIframe('html'); }">
+
+            <div id="mainpage211733" data-role="page" style="width: 100%; height: 100%;">
+
+
+                <!-- announcement -->
+                
+
+                <!-- dropwdown menu div -->
+                                <!-- end dropdown menu div -->
+
+
+
+                
+
+                    
+                        <!-- header (titlebar, back button, ...) -->
+                        <div id="xdm_header" data-role="header" data-position="" class="xdm_header xdm_section mobisit-titlebar-cls" style="z-index: 99999999; text-align: center; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999999;" title="header">
+
+                            <a href="/m/40529" onClick="$.mobile.showPageLoadingMsg(); $('.ui-loading .ui-loader').show();" class="left-header-home" style="display: none ; position: absolute;" data-direction="reverse" data-ajax="false" data-role="none">
+                                <div class="left-homeheaderbutton"></div>
+                            </a>
+
+                            
+                            <span class="headertitle" >
+                                -------------------                            </span>
+
+
+                            <!-- custom dropdown (for example XEAL) -->
+                            
+                                
+                                <!-- home button -->
+                                
+                            
+                        </div>
+
+                    
+                    <!-- END if p_disableheader -->
+                
+
+
+                <div id="maincontentdiv" data-role="content" style="padding-top: 3.3em;">
+
+
+                    
+
+                        <!-- site header -->
+                        
+
+                        <div id="xdm_abovebuttons" class="xdm_section xdm_abovebuttons abovebuttons">
+                                                    </div>
+
+
+                        <!-- ADS -->
+                        
+                        <!-- above image -->
+                                                    <div id="xdm_aboveimage" class="xdm_section xdm_aboveimage noimages"></div>
+                        
+
+                        <!-- buttons below top image -->
+                        <div id="belowbuttons" class="xdm_section xdm_belowbuttons abovebuttons">
+                                                    </div>
+
+                        <!-- click-to-call -->
+                        
+
+                                                    <!-- above menus -->
+                            <div class="xdm_section xdm_menu">
+                                                            </div>
+                        
+
+
+                        <!-- body -->
+                        <div class="body xdm_section xdm_body" id="xdm_body" title="body">
+
+
+                            <!-- above contact form -->
+                            
+
+                            <!-- text above (from new editor) -->
+                            
+                                                                                            <div class="widget_type_freeform"><div class='mobisit-contentblock-cls'><div class='mainContentBlock'><p style="text-align: center;">
+	EPIC REALTY, INC. (313) 999-2341</p>
+</div></div>
+
+        
+
+
+
+            
+
+            
+
+
+
+
+
+
+
+
+
+    <script>
+        var remail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var rephone = /^([\d \+\.\(\)\-]){2,}$/;
+        var reurl = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+        function localCheckForm(form) {
+            for (var i = 0; i < form.length; i++) {
+                var el = form[i];
+                if (el.type == 'email' && el.value != '' && ! el.value.match(remail)) {
+                    alert("The email address you entered is not valid");
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <script>
+        // $(document).ready(function(){
+        // $('.form').on('submit', function(e) {
+        // $('.form').submit(function() {
+
+        // var messageBody = '';
+        // $.each($('.form').serializeArray(), function(i, field) {
+         //    messageBody += field.name + ": " + field.value + '%0D%0A';
+        // });
+
+        // var hreflink = "mailto:aforbers@gmail.com?Subject=Homes&body=" + messageBody;
+        // var hreflink = "mailto:aforbers@gmail.com";
+        // $('.mail').attr("href", hreflink);
+        // e.preventDefault();
+        // $('.mail')[0].click()
+        // $('#emailsubmit')[0].click();
+
+        function sendMail() {
+            var link = "mailto:wendy@epicrealtymi.com"
+                    // + "?&cc=aforbers@gmail.com"
+                    + "?&subject=" + encodeURIComponent("Homes")
+                    + "&body=" + encodeURIComponent(document.getElementById('Name').value)
+            window.location.href = link;
+        }
+
+        // });
+        // });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- is there an upload field? -->
+    
+
+    
+
+	<form class="form" target="_top" method="post" enctype="text/plain" >
+
+		<!-- <input type="hidden" name="post" value="1"> -->
+		<!-- <input type="hidden" name="id" value="40529"> -->
+		<!-- <input type="hidden" name="p" value="form"> -->
+		<!-- <input type="hidden" name="postTo" value=""> -->
+		<!-- <input type="hidden" name="sendTo" value="wendy@epicrealtymi.com"> -->
+        <!-- <input type="hidden" name="redirectTo" value=""> -->
+
+        <!-- additional fields -->
+                
+		<!-- <input type="hidden" name="sendSubject" value="Sent from PROSPECTIVE CLIENT QUESTIONNAIRE"> -->
+        <!-- 		<input type="hidden" name="sendSenderAddress" value="wendy@epicrealtymi.com"> -->
+		<!-- <input type="hidden" name="sendSenderName" value="PROSPECTIVE CLIENT QUESTIONNAIRE"> -->
+		<!-- <input type="hidden" name="sendHtmlTemplate" value=""> -->
+		<!-- <input type="hidden" name="sendHtml" value=""> -->
+
+        
+                    <!-- antispam -->
+            <!-- <input type="text" name="as_rr98uv947" style="display: none;"> -->
+        
+
+        
+            <!-- NEW FORM -->
+            <div class="mobisit-form-cls x-panel-body">
+
+                
+                    
+                    
+                    <div class="label">
+                        NAME                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <input value='' class=" " id="Name" type="text" name='_name' title='NAME' >
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        NUMBER                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <input value='' class=" " type="text" name='_number' title='NUMBER' >
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        EMAIL                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <input value='' class=" " type="text" name='_email' title='EMAIL' >
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        ARE YOU WORKING WITH ANOTHER AGENT OR BROKER ?                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_are_you_working_with_another_agent_or_broker_' title='ARE YOU WORKING WITH ANOTHER AGENT OR BROKER ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='YES'>YES</option>
+                                                                    <option  value='NO'>NO</option>
+                                                            </select>
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        DO YOU RENT OR OWN YOUR CURRENT HOME ?                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_do_you_rent_or_own_your_current_home_' title='DO YOU RENT OR OWN YOUR CURRENT HOME ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='RENT'>RENT</option>
+                                                                    <option  value='OWN'>OWN</option>
+                                                            </select>
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        HOW SOON DO YOU NEED TO MOVE ?                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_how_soon_do_you_need_to_move_' title='HOW SOON DO YOU NEED TO MOVE ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='30 DAYS'>30 DAYS</option>
+                                                                    <option  value='60 DAYS'>60 DAYS</option>
+                                                                    <option  value='90 DAYS'>90 DAYS</option>
+                                                                    <option  value='120 DAYS'>120 DAYS</option>
+                                                            </select>
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        WHAT IS YOUR PRICE RANGE ?                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_what_is_your_price_range' title='WHAT IS YOUR PRICE RANGE ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='0-50k'>0-50k</option>
+                                                                    <option  value='50k-100k'>50k-100k</option>
+                                                                    <option  value='100k-200k'>100k-200k</option>
+                                                                    <option  value='200k-300k'>200k-300k</option>
+                                                                    <option  value='300k-400k'>300k-400k</option>
+                                                                    <option  value='400k+'>400k+</option>
+                                                            </select>
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        IN WHAT CITY ARE YOU LOOKING FOR YOUR HOME ?                                            </div>
+
+                    <div class="field">
+                                                    <input value='' class=" " type="text" name='_what_area_are_you_looking_in_' title='IN WHAT CITY ARE YOU LOOKING FOR YOUR HOME ?' >
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        HAVE YOU BEEN PRE-APPROVED FOR A LOAN BY A LENDER ?                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_have_you_been_prequalified_for_a_loan_by_a_lender_' title='HAVE YOU BEEN PRE-APPROVED FOR A LOAN BY A LENDER ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='YES'>YES</option>
+                                                                    <option  value='NO'>NO</option>
+                                                            </select>
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <!-- <div class="label">
+                        NAME OF LENDER, CONTACT PERSON &amp; PHONE NUMBER                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <input value='' class=" " type="text" name='_name_of_lender' title='NAME OF LENDER, CONTACT PERSON &amp; PHONE NUMBER' >
+
+                        
+                    </div> -->
+
+                
+                    
+                    
+                    <!-- <div class="label">
+                        HAVE YOU PURCHASED A HOME BEFORE ?                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_have_you_purchased_a_home_before_' title='HAVE YOU PURCHASED A HOME BEFORE ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='YES'>YES</option>
+                                                                    <option  value='NO'>NO</option>
+                                                            </select>
+
+                        
+                    </div> -->
+
+                
+                    
+                    
+                    <!-- <div class="label">
+                        WHAT TYPE OF EXTERIOR WALLS DO YOU WANT ?                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_what_type_of_exterior_walls_do_you_want_' title='WHAT TYPE OF EXTERIOR WALLS DO YOU WANT ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='BRICK'>BRICK</option>
+                                                                    <option  value='VINYL'>VINYL</option>
+                                                                    <option  value='WOOD'>WOOD</option>
+                                                            </select>
+
+                        
+                    </div> -->
+
+                
+                    
+                    
+                    <div class="label">
+                        WHAT STYLE OF HOUSE DO YOU WANT TO PURCHASE ?                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_do_have_a_particular_style_of_house_in_mind_' title='WHAT STYLE OF HOUSE DO YOU WANT TO PURCHASE ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='RANCH'>RANCH</option>
+                                                                    <option  value='BUNGALOW'>BUNGALOW</option>
+                                                                    <option  value='COLONIAL'>COLONIAL</option>
+                                                                    <option  value='TUDOR'>TUDOR</option>
+                                                                    <option  value='VICTORIAN'>VICTORIAN</option>
+                                                                    <option  value='CONDO'>CONDO</option>
+                                                                    <option  value='CAPE COD'>CAPE COD</option>
+                                                                    <option  value='NO PREFERENCE'>NO PREFERENCE</option>
+                                                            </select>
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        HOW MANY BEDROOMS ?                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_how_many_bedrooms_' title='HOW MANY BEDROOMS ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='1+'>1+</option>
+                                                                    <option  value='2+'>2+</option>
+                                                                    <option  value='3+'>3+</option>
+                                                                    <option  value='4+'>4+</option>
+                                                                    <option  value='5+'>5+</option>
+                                                                    <option  selected  value=''></option>
+                                                            </select>
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        HOW MANY FULL BATHROOMS ?                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_how_many_full_baths_' title='HOW MANY FULL BATHROOMS ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='1+'>1+</option>
+                                                                    <option  value='2+'>2+</option>
+                                                                    <option  value='3+'>3+</option>
+                                                                    <option  value='4+'>4+</option>
+                                                                    <option  value='5+'>5+</option>
+                                                            </select>
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        WOULD YOU LIKE A GARAGE ?                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_attached_or_detached_garage_' title='WOULD YOU LIKE A GARAGE ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='NO'>NO</option>
+                                                                    <option  value='YES-ATTACHED'>YES-ATTACHED</option>
+                                                                    <option  value='YES-DETACHED'>YES-DETACHED</option>
+                                                                    <option  selected  value=''></option>
+                                                            </select>
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        1 OR 2 CAR GARAGE ?                                            </div>
+
+                    <div class="field">
+                                                    <input value='' class=" " type="text" name='_1_or_2_car_garage_' title='1 OR 2 CAR GARAGE ?' >
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <!-- <div class="label">
+                        DO YOU WANT A BASEMENT ?                                            </div>
+
+                    <div class="field">
+                                                    <input value='' class=" " type="text" name='_do_you_need_a_basement_' title='DO YOU WANT A BASEMENT ?' >
+
+                        
+                    </div> -->
+
+                
+                    
+                    
+                    <div class="label">
+                        WOULD YOU LIKE A BASEMENT ?                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_basement_type' title='WOULD YOU LIKE A BASEMENT ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='NO'>NO</option>
+                                                                    <option  value='YES-FINISHED'>YES-FINISHED</option>
+                                                                    <option  value='YES-PARTIALLY FINISHED'>YES-PARTIALLY FINISHED</option>
+                                                                    <option  value='YES-UNFINISHED'>UNFINISHED</option>
+                                                                    
+                                                            </select>
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        HOW DO YOU LIKE TO COMMUNICATE ?                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_how_do_you_like_to_communicate_' title='HOW DO YOU LIKE TO COMMUNICATE ?'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='PHONE'>PHONE</option>
+                                                                    <!-- <option  value='FAX'>FAX</option> -->
+                                                                    <option  value='EMAIL'>EMAIL</option>
+                                                                    <option  value='TEXT'>TEXT</option>
+                                                                    <option  selected  value=''></option>
+                                                            </select>
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <!-- <div class="label">
+                        WHAT'S THE BEST TIME TO REACH YOU                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <select data-role="none" class="" name='_whats_the_best_time_to_reach_you' title='WHAT'S THE BEST TIME TO REACH YOU'>
+                                                                    <option  selected  value=''>- - -</option>
+                                                                    <option  value='MORNING'>MORNING</option>
+                                                                    <option  value='AFTERNOON'>AFTERNOON</option>
+                                                                    <option  value='EVENING'>EVENING</option>
+                                                            </select>
+
+                        
+                    </div>
+
+                
+                    
+                    
+                    <div class="label">
+                        WHAT'S A GOOD DAY FOR YOU TO COME TO THE OFFICE ?                                                    <span class="mandatory" style="display: none;">*</span>
+                                            </div>
+
+                    <div class="field">
+                                                    <input type="hidden" name="datefield[22][datename]" value="_whats_a_good_day_for_you_to_come_to_the_office_">
+                            <input type="hidden" name="datefield[22][onlyfuture]" value="1">
+
+                                                            <script type="text/javascript">
+                                    $(document).delegate('.ui-page', 'pageshow', function () {
+                                        doDatepicker22();
+                                    });
+                                    $(document).ready(function() {
+                                        doDatepicker22();
+                                    });
+                                    function doDatepicker22()
+                                    {
+                                        //Your code for each page load here
+                                        if ($('#dateselectdateid22').attr('type') == 'date')
+                                        {
+                                            $('#dateselect22').hide();
+                                            $('#dateselectdate22').show();
+                                        }
+                                    };
+                                </script>
+                            
+                                                            <div id="dateselect22">
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="33%" align="right"> -->
+                                                <!-- day -->
+                                                                                                    <!-- <input type="text" name="datefield[22][date1]" class="" style="width: 12px; font-size: 9px; display: inline; padding: 2px;">
+                                                                                            </td>
+
+                                            <td width="33%" align="center"> -->
+                                                <!-- month -->
+                                                <!-- <select name="datefield[22][date2]" data-role="none" class="" style="font-size: 9px; width: 50px;">
+                                                    <option value="">- -</option>
+                                                                                                            <option value="January_1">January</option>
+                                                                                                            <option value="February_2">February</option>
+                                                                                                            <option value="March_3">March</option>
+                                                                                                            <option value="April_4">April</option>
+                                                                                                            <option value="May_5">May</option>
+                                                                                                            <option value="June_6">June</option>
+                                                                                                            <option value="July_7">July</option>
+                                                                                                            <option value="August_8">August</option>
+                                                                                                            <option value="September_9">September</option>
+                                                                                                            <option value="October_10">October</option>
+                                                                                                            <option value="November_11">November</option>
+                                                                                                            <option value="December_12">December</option>
+                                                                                                    </select>
+                                            </td> -->
+
+                                            <!-- year -->
+                                            <!-- <td width="33%" align="left">
+                                                                                                    <input type="text" name="datefield[22][date3]" class="" style="width: 22px; font-size: 9px; display: inline; padding: 2px;">
+                                                                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div id="dateselectdate22" style="position: relative; display: none;">
+                                    <input id="dateselectdateid22" value='' class=" " type="date" name='datefield[22][date0]' title='WHAT'S A GOOD DAY FOR YOU TO COME TO THE OFFICE ?' >
+                                </div>
+                            
+                        
+                    </div> -->
+
+                            </div>
+
+
+
+
+
+        
+
+        <!-- <div style="margin: 2em auto 0.5em auto;"> -->
+        <div style="width: 80px"> 
+            <!-- <button onclick="sendMail(); return false">SUBMIT</button> -->
+            <!-- <input type="submit" value="SUBMIT" > -->
+            <!-- <input type="button" name="submit_name" id="btn_name" value="SUBMIT" onclick="submit_by_name()"/> -->
+        </div>
+
+	</form>
+
+    <!-- <a class="mail" href="mailto:wendy@epicrealtymi.com" target="_top" style="display: none;">Send Mail</a> -->
+    <!-- <a onclick="sendMail(); return false" style="color:#0000EE" target="_top">Click Here to Submit</a> -->
+    <a style="color:#0000EE" target="_blank" href="" onclick="this.href='mailto:wendy@epicrealtymi.com?&subject=Home Search&body='+document.getElementsByName('_name')[0].getAttribute('title') +': ' +document.getElementsByName('_name')[0].value +'%0D%0A' +document.getElementsByName('_number')[0].getAttribute('title') +': ' +document.getElementsByName('_number')[0].value +'%0D%0A'+document.getElementsByName('_email')[0].getAttribute('title') +': ' +document.getElementsByName('_email')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_are_you_working_with_another_agent_or_broker_')[0].getAttribute('title') +': ' +document.getElementsByName('_are_you_working_with_another_agent_or_broker_')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_do_you_rent_or_own_your_current_home_')[0].getAttribute('title') +': ' +document.getElementsByName('_do_you_rent_or_own_your_current_home_')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_how_soon_do_you_need_to_move_')[0].getAttribute('title') +': ' +document.getElementsByName('_how_soon_do_you_need_to_move_')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_what_is_your_price_range')[0].getAttribute('title') +': ' +document.getElementsByName('_what_is_your_price_range')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_what_area_are_you_looking_in_')[0].getAttribute('title') +': ' +document.getElementsByName('_what_area_are_you_looking_in_')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_have_you_been_prequalified_for_a_loan_by_a_lender_')[0].getAttribute('title') +': ' +document.getElementsByName('_have_you_been_prequalified_for_a_loan_by_a_lender_')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_do_have_a_particular_style_of_house_in_mind_')[0].getAttribute('title') +': ' +document.getElementsByName('_do_have_a_particular_style_of_house_in_mind_')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_how_many_bedrooms_')[0].getAttribute('title') +': ' +document.getElementsByName('_how_many_bedrooms_')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_how_many_full_baths_')[0].getAttribute('title') +': ' +document.getElementsByName('_how_many_full_baths_')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_attached_or_detached_garage_')[0].getAttribute('title') +': ' +document.getElementsByName('_attached_or_detached_garage_')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_1_or_2_car_garage_')[0].getAttribute('title') +': ' +document.getElementsByName('_1_or_2_car_garage_')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_basement_type')[0].getAttribute('title') +': ' +document.getElementsByName('_basement_type')[0].value +'%0D%0A'+'%0D%0A'+document.getElementsByName('_how_do_you_like_to_communicate_')[0].getAttribute('title') +': ' +document.getElementsByName('_how_do_you_like_to_communicate_')[0].value +'%0D%0A'">Click Here to Submit</a>
+    <!-- <a style="color:#0000EE" href="javascript:window.location.href = 'mailto:wendy@epicrealtymi.com?&subject=Homes&body=document.getElementById('Name').value'">Click Here to Submit</a> -->
+</div>
+                            
+
+                            <!-- text below -->
+                            
+                        </div>
+
+
+                                                                                <!-- footer menus -->
+                            <div id="xdm_menu" class="xdm_section xdm_menu">
+                                                            </div>
+
+                        
+                    
+
+                    <div id="xdm_belowbuttons" class="xdm_section xdm_belowbuttons belowbuttons">
+                                            </div>
+
+                </div>
+
+
+
+                <!-- bottom contact form -->
+                
+
+                <!-- page comments? -->
+                                <!-- field1 is "active" or not -->
+                
+
+
+
+                <div data-role="footer"  title="footer">
+
+                    <!-- click-to-call -->
+                    
+                    <!-- ADS -->
+                    
+                </div>
+
+
+                <!-- footer image -->
+                
+
+                <!-- footer -->
+                                    <div class="footer">
+
+
+
+
+
+                        <div id="xdm_footer" class="xdm_footer">
+                                                                                                                                                                                                                                                        &nbsp;
+                                                    </div>
+
+
+                                                    <!-- <div style="width: 64px; margin: 1em auto; text-align: center;" id="default_print_button_container"></div>
+
+                            <script src="http://www.google.com/cloudprint/client/cpgadget.js"></script><script defer="defer"> var gadget = new cloudprint.Gadget(); gadget.setPrintButton( cloudprint.Gadget.createDefaultPrintButton("default_print_button_container")); gadget.setPrintDocument("url", "-------------------", "http://my.accessmobilewebsite.com/m/40529/m/40529/p/211733");</script>
+                            <div style="clear: both; float: none;"></div> -->
+                        
+
+                        
+                    </div>
+                
+
+
+                
+
+                <div id="xdm_closer"></div>
+
+
+            </div>
+
+
+
+            <!-- more pages -->
+            
+
+        
+
+
+        <!-- cookie  law -->
+                    <!-- no -->
+        
+
+
+
+        <!-- google analytics -->
+        
+
+
+        
+
+
+
+    
+    <!-- pgb push log div -->
+    
+	</body>
+</html>
